@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  margin-bottom: 30px;
+}
+
+.buckets {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.bucket { width: 200px; }
+
+.bucket h2 {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.course-list {
+  height: 300px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-top: none;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.course-item {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.course-item.alt {
+  background: rgb(221, 239, 221);
+}
+
+.course-item.highlighted {
+  background: deepskyblue !important;
+}
+
+.course-item:hover { opacity: 0.85; }
+
+.course-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.course-type { font-size: 0.72rem; margin-top: 2px; }
+.course-type.compulsory { color: #006400; font-weight: 600; }
+.course-type.elective { color: #8b0000; font-weight: 600; }
+
+.course-credit { font-size: 0.72rem; color: #333; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.footer label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#select-btn {
+  padding: 6px 18px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+#select-btn:hover:not(:disabled) { opacity: 0.8; }
+#select-btn:disabled { background: #aaa; cursor: not-allowed; }

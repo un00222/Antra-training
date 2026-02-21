@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Selection Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Class Selection Page</h1>
+
+  <div class="buckets">
+    <div class="bucket">
+      <h2>Available Courses</h2>
+      <div class="course-list" id="available-list"></div>
+    </div>
+
+    <div class="bucket">
+      <h2>Selected Courses</h2>
+      <div class="course-list" id="selected-list"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <label>Total Credit : <span id="total-credit">0</span></label>
+    <button id="select-btn" disabled>Select</button>
+  </div>
+
+  <script src="model.js"></script>
+  <script src="view.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
